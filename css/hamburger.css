@@ -1,0 +1,49 @@
+    /* Estilos para o menu hamburger */
+    .hamburger {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger span,
+    .hamburger::before,
+    .hamburger::after {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--light-color);
+        transition: all 0.3s ease;
+    }
+
+    .hamburger span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger::before {
+        content: '';
+        top: 0;
+    }
+
+    .hamburger::after {
+        content: '';
+        bottom: 0;
+    }
+
+    /* Animação do hamburger para X */
+    .hamburger.active span {
+        transform: translateY(-50%) scale(0);
+    }
+
+    .hamburger.active::before {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .hamburger.active::after {
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    } 
