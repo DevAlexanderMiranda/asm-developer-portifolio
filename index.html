@@ -1,587 +1,754 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <!-- Meta Padrão (Google, navegadores) -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>ASM | Full Stack Web Developer</title>
-<meta name="description" content="Desenvolvedor Full Stack especializado em JavaScript, React, Node.js e soluções modernas para a web. Confira meu portfólio e projetos.">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>ASM | Full Stack Web Developer</title>
+    <meta
+      name="description"
+      content="Desenvolvedor Full Stack especializado em JavaScript, React, Node.js e soluções modernas para a web. Confira meu portfólio e projetos."
+    />
 
-<!-- Open Graph (Instagram, Facebook, WhatsApp, LinkedIn) -->
-<meta property="og:title" content="ASM | Full Stack Web Developer">
-<meta property="og:description" content="Desenvolvedor Full Stack especializado em JavaScript, React, Node.js e soluções modernas para a web.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://seudominio.com"> <!-- 👈 Substitua pelo SEU domínio -->
-<meta property="og:image" content="https://seudominio.com/images/face-min.png"> <!-- Imagem de preview (URL ABSOLUTA) -->
-<meta property="og:image:width" content="1200"> <!-- Largura recomendada para Instagram -->
-<meta property="og:image:height" content="630"> <!-- Altura recomendada -->
-<meta property="og:image:alt" content="Foto de perfil de ASM, Full Stack Developer">
-<meta property="og:site_name" content="ASM | Full Stack Web Developer">
+    <!-- Open Graph (Instagram, Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="ASM | Full Stack Web Developer" />
+    <meta
+      property="og:description"
+      content="Desenvolvedor Full Stack especializado em JavaScript, React, Node.js e soluções modernas para a web."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://asmdeveloper.com" />
+    <meta
+      property="og:image"
+      content="https://seudominio.com/images/face-min.png"
+    />
+    <!-- Imagem de preview (URL ABSOLUTA) -->
+    <meta property="og:image:width" content="1200" />
+    <!-- Largura recomendada para Instagram -->
+    <meta property="og:image:height" content="630" />
+    <!-- Altura recomendada -->
+    <meta
+      property="og:image:alt"
+      content="Foto de perfil de ASM, Full Stack Developer"
+    />
+    <meta property="og:site_name" content="ASM | Full Stack Web Developer" />
 
-<!-- Configurações de tema e ícone -->
-<meta name="theme-color" content="#6c63ff">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="icon" type="image/png" href="images/face-min.png">
+    <!-- Configurações de tema e ícone -->
+    <meta name="theme-color" content="#6c63ff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="icon" type="image/png" href="images/face-min.png" />
 
-<!-- CSS e Fontes -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/hamburger.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <!-- CSS e Fontes -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Cursor personalizado -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
     <!-- Carregamento da página -->
     <div class="preloader">
-        <div class="loading-spinner"></div>
+      <div class="loading-spinner"></div>
     </div>
 
     <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#home">ASMDEVELOPER<span>.</span></a>
-            </div>
-            <div class="menu-toggle">
-                <div class="hamburger">
-                    <span></span>
-                </div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#expertise" class="nav-link">Habilidades</a></li>
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
-                <li><a href="#certificates" class="nav-link">Certificados</a></li>
-                <li class="theme-toggle-container">
-                    <button class="theme-toggle" id="themeToggle">
-                        <i class="fas fa-sun"></i>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#home">ASMDEVELOPER<span>.</span></a>
+        </div>
+        <div class="menu-toggle">
+          <div class="hamburger">
+            <span></span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#expertise" class="nav-link">Habilidades</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+          <li><a href="#certificates" class="nav-link">Certificados</a></li>
+          <li class="theme-toggle-container">
+            <button class="theme-toggle" id="themeToggle">
+              <i class="fas fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Menu Mobile -->
     <div class="mobile-menu">
-        <div class="mobile-menu-container">
-            <ul class="mobile-nav-links">
-                <li><a href="#home" class="mobile-nav-link">Home</a></li>
-                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
-                <li><a href="#expertise" class="mobile-nav-link">Habilidades</a></li>
-                <li><a href="#about" class="mobile-nav-link">Sobre</a></li>
-                <li><a href="#contact" class="mobile-nav-link">Contato</a></li>
-                <li><a href="#certificates" class="mobile-nav-link">Certificados</a></li>
-                <li class="theme-toggle-container">
-                    <button class="theme-toggle" id="mobileThemeToggle">
-                        <i class="fas fa-sun"></i>
-                    </button>
-                </li>
-            </ul>
-            <div class="mobile-socials">
-                <a href="https://github.com/DevAlexanderMiranda" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/alexander-miranda-8996b4274/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/dev.alexander.miranda?igsh=MWN2MGVodWFpenJmZQ==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </div>
+      <div class="mobile-menu-container">
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#expertise" class="mobile-nav-link">Habilidades</a></li>
+          <li><a href="#about" class="mobile-nav-link">Sobre</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contato</a></li>
+          <li>
+            <a href="#certificates" class="mobile-nav-link">Certificados</a>
+          </li>
+          <li class="theme-toggle-container">
+            <button class="theme-toggle" id="mobileThemeToggle">
+              <i class="fas fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="mobile-socials">
+          <a
+            href="https://github.com/DevAlexanderMiranda"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/alexander-miranda-8996b4274/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/dev.alexander.miranda?igsh=MWN2MGVodWFpenJmZQ=="
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
+      </div>
     </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="reveal-text gradient-text">Full Stack<br>Web Developer</h1>
-                <p class="reveal-text">Transformando ideias reais em experiências digitais.</p>
-                <div class="hero-btns reveal-text">
-                    <a href="#contact" class="btn btn-primary pulse">Entre em contato</a>
-                    <a href="#skills" class="btn btn-secondary">Ver skills</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <div class="developer-avatar float">
-                        <div class="avatar-circle">
-                            <div class="center-dot"></div>
-                        </div>
-                        <div class="orbit">
-                            <div class="tech-icon html"><i class="fab fa-html5"></i></div>
-                            <div class="tech-icon css"><i class="fab fa-css3-alt"></i></div>
-                            <div class="tech-icon js"><i class="fab fa-js"></i></div>
-                            <div class="tech-icon react"><i class="fab fa-react"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="reveal-text gradient-text">
+            Full Stack<br />Web Developer
+          </h1>
+          <p class="reveal-text">
+            Transformando ideias reais em experiências digitais.
+          </p>
+          <div class="hero-btns reveal-text">
+            <a href="#contact" class="btn btn-primary pulse"
+              >Entre em contato</a
+            >
+            <a href="#skills" class="btn btn-secondary">Ver skills</a>
+          </div>
         </div>
-        <div class="scroll-indicator bounce">
-            <div class="mouse">
-                <div class="wheel"></div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <div class="developer-avatar float">
+              <div class="avatar-circle">
+                <div class="center-dot"></div>
+              </div>
+              <div class="orbit">
+                <div class="tech-icon html"><i class="fab fa-html5"></i></div>
+                <div class="tech-icon css"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech-icon js"><i class="fab fa-js"></i></div>
+                <div class="tech-icon react"><i class="fab fa-react"></i></div>
+              </div>
             </div>
-            <div class="arrow">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator bounce">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title reveal-text">Minhas Skills</h2>
-                <p class="section-subtitle reveal-text">Tecnologias que utilizo para criar aplicações web modernas</p>
-            </div>
-            <div class="skills-container">
-                <div class="skill-card glow" data-aos="fade-up">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML5</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 100%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3>CSS3</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-icon">
-                        <i class="fa-brands fa-react"></i>
-                    </div>
-                    <h3>React</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 40%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="400">
-                    <div class="skill-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <h3>Node.js</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 30%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="500">
-                    <div class="skill-icon tailwind">
-                        <i class="fab fa-css3"></i>
-                    </div>
-                    <h3>Tailwind CSS</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 45%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="600">
-                    <div class="skill-icon php">
-                        <i class="fab fa-php"></i>
-                    </div>
-                    <h3>PHP</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 60%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="700">
-                    <div class="skill-icon">
-                        <i class="fab fa-laravel"></i>
-                    </div>
-                    <h3>Laravel</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 35%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="800">
-                    <div class="skill-icon">
-                        <i class="fab fa-wordpress"></i>
-                    </div>
-                    <h3>WordPress</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 30%"></div>
-                    </div>
-                </div>
-                <div class="skill-card glow" data-aos="fade-up" data-aos-delay="900">
-                    <div class="skill-icon">
-                        <i class="fab fa-bootstrap"></i>
-                    </div>
-                    <h3>Bootstrap</h3>
-                    <div class="skill-level">
-                        <div class="progress" style="width: 75%"></div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title reveal-text">Minhas Skills</h2>
+          <p class="section-subtitle reveal-text">
+            Tecnologias que utilizo para criar aplicações web modernas
+          </p>
         </div>
+        <div class="skills-container">
+          <div class="skill-card glow" data-aos="fade-up">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML5</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 100%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS3</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-icon">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h3>React</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 40%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3>Node.js</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 30%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-icon tailwind">
+              <i class="fab fa-css3"></i>
+            </div>
+            <h3>Tailwind CSS</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 45%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="600">
+            <div class="skill-icon php">
+              <i class="fab fa-php"></i>
+            </div>
+            <h3>PHP</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="700">
+            <div class="skill-icon">
+              <i class="fab fa-laravel"></i>
+            </div>
+            <h3>Laravel</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 35%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="800">
+            <div class="skill-icon">
+              <i class="fab fa-wordpress"></i>
+            </div>
+            <h3>WordPress</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 30%"></div>
+            </div>
+          </div>
+          <div class="skill-card glow" data-aos="fade-up" data-aos-delay="900">
+            <div class="skill-icon">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <h3>Bootstrap</h3>
+            <div class="skill-level">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Expertise Section -->
     <section id="expertise" class="expertise">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title reveal-text">Minhas Habilidades</h2>
-                <p class="section-subtitle reveal-text">Princípios e práticas que guiam meu trabalho como desenvolvedor</p>
-            </div>
-            <div class="expertise-container">
-                <div class="expertise-card" data-aos="fade-up">
-                    <div class="expertise-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Clean Code</h3>
-                    <p>Código limpo, organizado e de fácil manutenção, seguindo padrões e boas práticas para garantir legibilidade e escalabilidade.</p>
-                </div>
-                
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="expertise-icon">
-                        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h3>Performance</h3>
-                    <p>Otimização constante para garantir velocidade de carregamento e execução eficiente, melhorando a experiência do usuário.</p>
-                </div>
-                
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="expertise-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Responsividade</h3>
-                    <p>Interfaces adaptáveis que proporcionam uma experiência consistente em todos os dispositivos, do desktop ao mobile.</p>
-                </div>
-                
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="expertise-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Habilidades "Soft"</h3>
-                    <p>Comunicação clara, empatia, trabalho em equipe e capacidade de adaptação para colaborar efetivamente em projetos.</p>
-                </div>
-                
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="expertise-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Solução de Problemas</h3>
-                    <p>Capacidade analítica para identificar, solucionar e prevenir problemas complexos, com foco em soluções eficientes e escaláveis.</p>
-                </div>
-                
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="expertise-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Habilidades Atitudinais</h3>
-                    <p>Proatividade, comprometimento, ética profissional e busca constante por aprendizado e desenvolvimento pessoal.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title reveal-text">Minhas Habilidades</h2>
+          <p class="section-subtitle reveal-text">
+            Princípios e práticas que guiam meu trabalho como desenvolvedor
+          </p>
         </div>
+        <div class="expertise-container">
+          <div class="expertise-card" data-aos="fade-up">
+            <div class="expertise-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Clean Code</h3>
+            <p>
+              Código limpo, organizado e de fácil manutenção, seguindo padrões e
+              boas práticas para garantir legibilidade e escalabilidade.
+            </p>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="expertise-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Performance</h3>
+            <p>
+              Otimização constante para garantir velocidade de carregamento e
+              execução eficiente, melhorando a experiência do usuário.
+            </p>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="expertise-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsividade</h3>
+            <p>
+              Interfaces adaptáveis que proporcionam uma experiência consistente
+              em todos os dispositivos, do desktop ao mobile.
+            </p>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="expertise-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Habilidades "Soft"</h3>
+            <p>
+              Comunicação clara, empatia, trabalho em equipe e capacidade de
+              adaptação para colaborar efetivamente em projetos.
+            </p>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="expertise-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Solução de Problemas</h3>
+            <p>
+              Capacidade analítica para identificar, solucionar e prevenir
+              problemas complexos, com foco em soluções eficientes e escaláveis.
+            </p>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="expertise-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Habilidades Atitudinais</h3>
+            <p>
+              Proatividade, comprometimento, ética profissional e busca
+              constante por aprendizado e desenvolvimento pessoal.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="image-frame">
-                        <div class="developer-image">
-                            <img src="images/face-min.png" alt="Alexander Developer" class="profile-image">
-                        </div>
-                        <div class="frame-decoration"></div>
-                    </div>
-                </div>
-                <div class="about-text" data-aos="fade-left">
-                    <h2 class="section-title reveal-text">Sobre Mim</h2>
-                    <p>Sou um desenvolvedor <strong>Full Stack Web</strong> dedicado à criação de soluções web eficientes e bem estruturadas. Minha experiência abrange tanto o front-end quanto o back-end, permitindo-me construir aplicações que aliam uma apresentação cuidadosa com uma funcionalidade sólida e confiável.</p>
-                    <p>Minha jornada no desenvolvimento web começou com os fundamentos de HTML, CSS e JavaScript, que formam a base do meu trabalho. Ao longo dos anos, aprofundei meus conhecimentos no ecossistema PHP, com forte familiaridade e experiência em plataformas como WordPress e no framework Laravel. Busco constantemente aplicar as melhores práticas de desenvolvimento para entregar soluções de alta qualidade.</p>
-                    <p>Fora do mundo do código, sou um entusiasta por explorar novas tecnologias e um apreciador de um bom café.</p>
-                    
-                    <div class="about-details">
-                        <div class="detail">
-                            <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
-                            <span>Parintins, Amazonas, Brasil</span>
-                        </div>
-                        <div class="detail">
-                            <span class="detail-icon"><i class="fas fa-envelope"></i></span>
-                            <span>alexanderdeveloperweb@gmail.com</span>
-                        </div>
-                        <div class="detail">
-                            <span class="detail-icon"><i class="fas fa-graduation-cap"></i></span>
-                            <span>Análise e Desenvolvimento de Sistemas</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#contact" class="btn btn-primary shake">Entre em contato</a>
-                </div>
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image" data-aos="fade-right">
+            <div class="image-frame">
+              <div class="developer-image">
+                <img
+                  src="images/face-min.png"
+                  alt="Alexander Developer"
+                  class="profile-image"
+                />
+              </div>
+              <div class="frame-decoration"></div>
             </div>
+          </div>
+          <div class="about-text" data-aos="fade-left">
+            <h2 class="section-title reveal-text">Sobre Mim</h2>
+            <p>
+              Sou um desenvolvedor <strong>Full Stack Web</strong> dedicado à
+              criação de soluções web eficientes e bem estruturadas. Minha
+              experiência abrange tanto o front-end quanto o back-end,
+              permitindo-me construir aplicações que aliam uma apresentação
+              cuidadosa com uma funcionalidade sólida e confiável.
+            </p>
+            <p>
+              Minha jornada no desenvolvimento web começou com os fundamentos de
+              HTML, CSS e JavaScript, que formam a base do meu trabalho. Ao
+              longo dos anos, aprofundei meus conhecimentos no ecossistema PHP,
+              com forte familiaridade e experiência em plataformas como
+              WordPress e no framework Laravel. Busco constantemente aplicar as
+              melhores práticas de desenvolvimento para entregar soluções de
+              alta qualidade.
+            </p>
+            <p>
+              Fora do mundo do código, sou um entusiasta por explorar novas
+              tecnologias e um apreciador de um bom café.
+            </p>
+
+            <div class="about-details">
+              <div class="detail">
+                <span class="detail-icon"
+                  ><i class="fas fa-map-marker-alt"></i
+                ></span>
+                <span>Parintins, Amazonas, Brasil</span>
+              </div>
+              <div class="detail">
+                <span class="detail-icon"><i class="fas fa-envelope"></i></span>
+                <span>alexanderdeveloperweb@gmail.com</span>
+              </div>
+              <div class="detail">
+                <span class="detail-icon"
+                  ><i class="fas fa-graduation-cap"></i
+                ></span>
+                <span>Análise e Desenvolvimento de Sistemas</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary shake"
+              >Entre em contato</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contato</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Localização</h3>
-                            <p>Parintins, Amazonas</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>alexanderdeveloperweb@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Telefone</h3>
-                            <p>(92) 99324-6999</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://github.com/DevAlexanderMiranda" title="GitHub" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/alexander-miranda-8996b4274/" title="LinkedIn" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.instagram.com/dev.alexander.miranda?igsh=MWN2MGVodWFpenJmZQ==" target="_blank" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Contact Form -->
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="15c5a7a3-df6a-4c79-bbbb-4e531107834a">
-                        <input type="hidden" name="subject" value="Nova mensagem do site do portfólio">
-                        <input type="hidden" name="from_name" value="Formulário de Contato do Portfólio">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" placeholder="Nome" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Seu email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Comentário</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary pulse">
-                            <span>Enviar Mensagem</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-                <!-- Contact Form -->
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contato</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Localização</h3>
+                <p>Parintins, Amazonas</p>
+              </div>
             </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>alexanderdeveloperweb@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Telefone</h3>
+                <p>(92) 99324-6999</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/DevAlexanderMiranda"
+                title="GitHub"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alexander-miranda-8996b4274/"
+                title="LinkedIn"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/dev.alexander.miranda?igsh=MWN2MGVodWFpenJmZQ=="
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form" data-aos="fade-left">
+            <form
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="15c5a7a3-df6a-4c79-bbbb-4e531107834a"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="Nova mensagem do site do portfólio"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Formulário de Contato do Portfólio"
+              />
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Seu email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Comentário</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Sua mensagem"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary pulse">
+                <span>Enviar Mensagem</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <!-- Contact Form -->
         </div>
+      </div>
     </section>
 
     <!-- Popup de Sucesso -->
     <div class="notification" id="successPopup">
-        <div class="notification-icon">
-            <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="notification-content">
-            <h3>Mensagem Enviada!</h3>
-            <p>Obrigado pelo seu contato. Retornarei em breve.</p>
-        </div>
-        <div class="notification-progress"></div>
+      <div class="notification-icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="notification-content">
+        <h3>Mensagem Enviada!</h3>
+        <p>Obrigado pelo seu contato. Retornarei em breve.</p>
+      </div>
+      <div class="notification-progress"></div>
     </div>
 
     <!-- Certificates Section -->
     <section id="certificates" class="certificates">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title reveal-text">Certificados</h2>
-                <p class="section-subtitle reveal-text">Minhas certificações em desenvolvimento web, onde estou em constante evolução.</p>
-            </div>
-            <div class="certificates-container">
-                <div class="certificate-card">
-                    <i class="fab fa-html5 certificate-icon"></i>
-                    <div class="certificate-content">
-                        <h3>HTML5</h3>
-                        <p class="institution">B7Web, Rockseat, Udemy</p>
-                        <p class="year">2024</p>
-                    </div>
-                </div>
-
-                <div class="certificate-card">
-                    <i class="fab fa-css3-alt certificate-icon"></i>
-                    <div class="certificate-content">
-                        <h3>CSS3</h3>
-                        <p class="institution">B7Web, Rockseat, Udemy</p>
-                        <p class="year">2024</p>
-                    </div>
-                </div>
-
-                <div class="certificate-card">
-                    <i class="fab fa-js certificate-icon"></i>
-                    <div class="certificate-content">
-                        <h3>JavaScript</h3>
-                        <p class="institution">B7Web, Rockseat, Udemy</p>
-                        <p class="year">2024</p>
-                    </div>
-                </div>
-
-                <div class="certificate-card">
-                    <i class="fab fa-php certificate-icon"></i>
-                    <div class="certificate-content">
-                        <h3>PHP 5.6</h3>
-                        <p class="institution">IFAM</p>
-                        <p class="year">2017</p>
-                    </div>
-                </div>
-
-                <div class="certificate-card">
-                    <i class="fab fa-php certificate-icon"></i>
-                    <div class="certificate-content">
-                        <h3>PHP 8.2</h3>
-                        <p class="institution">B7Web</p>
-                        <p class="year">2025</p>
-                    </div>
-                </div>
-
-                <div class="certificate-card">
-                    <i class="fab fa-laravel certificate-icon"></i>
-                    <div class="certificate-content">
-                        <h3>Laravel 12</h3>
-                        <p class="institution">B7Web</p>
-                        <p class="year">2025</p>
-                    </div>
-                </div>
-
-                <div class="certificate-card">
-                    <i class="fab fa-wordpress certificate-icon"></i>
-                    <div class="certificate-content">
-                        <h3>WordPress</h3>
-                        <p class="institution">B7Web</p>
-                        <p class="year">2023</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title reveal-text">Certificados</h2>
+          <p class="section-subtitle reveal-text">
+            Minhas certificações em desenvolvimento web, onde estou em constante
+            evolução.
+          </p>
         </div>
+        <div class="certificates-container">
+          <div class="certificate-card">
+            <i class="fab fa-html5 certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>HTML5</h3>
+              <p class="institution">B7Web, Rockseat, Udemy</p>
+              <p class="year">2024</p>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <i class="fab fa-css3-alt certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>CSS3</h3>
+              <p class="institution">B7Web, Rockseat, Udemy</p>
+              <p class="year">2024</p>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <i class="fab fa-js certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>JavaScript</h3>
+              <p class="institution">B7Web, Rockseat, Udemy</p>
+              <p class="year">2024</p>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <i class="fab fa-php certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>PHP 5.6</h3>
+              <p class="institution">IFAM</p>
+              <p class="year">2017</p>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <i class="fab fa-php certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>PHP 8.2</h3>
+              <p class="institution">B7Web</p>
+              <p class="year">2025</p>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <i class="fab fa-laravel certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>Laravel 12</h3>
+              <p class="institution">B7Web</p>
+              <p class="year">2025</p>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <i class="fab fa-wordpress certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>WordPress</h3>
+              <p class="institution">B7Web</p>
+              <p class="year">2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Studying Section -->
     <section id="studying" class="studying">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title reveal-text">Capacitações em andamento</h2>
-                <p class="section-subtitle reveal-text">Tecnologias que estou aprendendo atualmente</p>
-            </div>
-            <div class="studying-container">
-                <div class="studying-card">
-                    <i class="fab fa-react studying-icon"></i>
-                    <div class="studying-content">
-                        <h3>React</h3>
-                        <p class="institution">B7Web</p>
-                        <p class="year">2025</p>
-                    </div>
-                </div>
-
-                <div class="studying-card">
-                    <i class="fab fa-node-js studying-icon"></i>
-                    <div class="studying-content">
-                        <h3>Node.js</h3>
-                        <p class="institution">B7Web</p>
-                        <p class="year">2025</p>
-                    </div>
-                </div>
-
-                <div class="studying-card">
-                    <i class="fab fa-css3 studying-icon"></i>
-                    <div class="studying-content">
-                        <h3>Tailwind CSS</h3>
-                        <p class="institution">B7Web</p>
-                        <p class="year">2025</p>
-                    </div>
-                </div>
-
-                <div class="studying-card">
-                    <i class="fab fa-js studying-icon"></i>
-                    <div class="studying-content">
-                        <h3>TypeScript</h3>
-                        <p class="institution">B7Web</p>
-                        <p class="year">2025</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title reveal-text">Capacitações em andamento</h2>
+          <p class="section-subtitle reveal-text">
+            Tecnologias que estou aprendendo atualmente
+          </p>
         </div>
+        <div class="studying-container">
+          <div class="studying-card">
+            <i class="fab fa-react studying-icon"></i>
+            <div class="studying-content">
+              <h3>React</h3>
+              <p class="institution">B7Web</p>
+              <p class="year">2025</p>
+            </div>
+          </div>
+
+          <div class="studying-card">
+            <i class="fab fa-node-js studying-icon"></i>
+            <div class="studying-content">
+              <h3>Node.js</h3>
+              <p class="institution">B7Web</p>
+              <p class="year">2025</p>
+            </div>
+          </div>
+
+          <div class="studying-card">
+            <i class="fab fa-css3 studying-icon"></i>
+            <div class="studying-content">
+              <h3>Tailwind CSS</h3>
+              <p class="institution">B7Web</p>
+              <p class="year">2025</p>
+            </div>
+          </div>
+
+          <div class="studying-card">
+            <i class="fab fa-js studying-icon"></i>
+            <div class="studying-content">
+              <h3>TypeScript</h3>
+              <p class="institution">B7Web</p>
+              <p class="year">2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#home">ASMDEVELOPER<span>.</span></a>
-                    <p>Full Stack Web Developer</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-group">
-                        <h3>Links</h3>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#expertise">Habilidades</a></li>
-                            <li><a href="#about">Sobre</a></li>
-                            <li><a href="#contact">Contato</a></li>
-                            <li><a href="#certificates">Certificados</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-group">
-                        <h3>Social</h3>
-                        <div class="footer-socials">
-                            <a href="https://github.com/DevAlexanderMiranda" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/alexander-miranda-8996b4274/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/dev.alexander.miranda?igsh=MWN2MGVodWFpenJmZQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="#home">ASMDEVELOPER<span>.</span></a>
+            <p>Full Stack Web Developer</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-group">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#expertise">Habilidades</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#certificates">Certificados</a></li>
+              </ul>
             </div>
-            <div class="footer-bottom">
-                <p>© <span id="year"></span> ASMDEVELOPER. Todos os direitos reservados.</p>
-                <p class="made-with">Feito com <i class="fas fa-heart"></i> e <i class="fas fa-coffee"></i></p>
+            <div class="footer-group">
+              <h3>Social</h3>
+              <div class="footer-socials">
+                <a href="https://github.com/DevAlexanderMiranda" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/alexander-miranda-8996b4274/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/dev.alexander.miranda?igsh=MWN2MGVodWFpenJmZQ=="
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            © <span id="year"></span> ASMDEVELOPER. Todos os direitos
+            reservados.
+          </p>
+          <p class="made-with">
+            Feito com <i class="fas fa-heart"></i> e
+            <i class="fas fa-coffee"></i>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-
-</body>
-</html> 
+  </body>
+</html>
